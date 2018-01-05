@@ -1,0 +1,892 @@
+body {
+
+	margin: 0;
+	background-color: black;
+	color: white;
+	/* font-family: sans-serif; */
+	/* font: normal normal bold "Bad Script", Helvetica, sans-serif; */
+	font-family: Walt Disney Script;
+	
+	overflow:hidden;
+
+}
+
+
+@font-face {
+  	font-family: Walt Disney Script;
+  	src: url('../Assets/disneyfont.ttf') format("truetype");
+
+}
+
+@font-face{
+	font-family: Curly Font;
+	src: url('../Assets/akaDora.ttf') format("truetype");
+}
+
+
+section{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: block;
+	box-sizing: border-box;
+}
+
+h2, h3{
+
+	margin: 5px;
+	position: relative;
+	
+}
+
+.helpmessage{
+	display: none;
+	font-size: 300%;
+	text-shadow: 0 2px 2px black;
+	position: absolute;
+	margin:auto;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+	z-index: 1;
+}
+.helpmessagebot{
+	display: none;
+	font-size: 300%;
+	text-shadow: 0 2px 2px black;
+	position: absolute;
+	margin:auto;
+	top: 255%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+	z-index: 1;
+}
+.helpmessageleft{
+	display: none;
+	font-size: 300%;
+	text-shadow: 0 2px 2px black;
+	position: absolute;
+	margin:auto;
+	top: 140%;
+	right: 27%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+	z-index: 1;
+}
+
+h5.helpmessage{
+	display: none;
+	font-size: 300%;
+	text-shadow: 0 2px 2px black;
+	position: absolute;
+	margin:auto;
+	top: 10%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+}
+
+h6.helpmessage2{
+	display: none;
+	font-size: 300%;
+	text-shadow: 0 2px 2px black;
+	position: absolute;
+	margin:auto;
+	top: 80%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+}
+
+.helpmessage3{
+	display: none;
+	font-size: 300%;
+	text-shadow: 0 2px 2px black;
+	position: absolute;
+	margin:auto;
+	top: 40%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+}
+
+#helpmessageside{
+	display: none;
+	font-size: 300%;
+	text-shadow: 0 2px 2px black;
+	position: absolute;
+	margin:auto;
+	top: 40%;
+	left: 85%;
+	transform: translate(-50%, -50%);
+	opacity: 0.5;
+}
+
+
+/*div#godown{
+position:absolute;
+	 bottom: -20px; 
+	 width: 100vw;
+	 height: 10vh;
+	 background-color: violet;
+}*/
+
+div#godown1{
+position:absolute;
+	 bottom: 0px;
+	 width: 100vw;
+	 height: 10vh;
+	 opacity: 0.5;
+}
+	 /*filter: alpha(opacity=50);  /*REMOVE OPACITY EFFECT IF IM NOT PUTTING IN A DELAY WHEN SCROLLING PAGES
+	 background-color: violet;
+}
+div#godown1:hover{
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}*/
+
+
+
+
+
+
+div#goup1{
+position:absolute;
+	 top: 0%;
+	 width: 100vw;
+	 height: 8.5vh;
+	 /*background-color: yellow;*/
+	 z-index: 998;
+}
+
+/*div#goup2{
+position:absolute;
+	 top: 202.5%;   /* why is this such a strange percentage to fit in fine??  202.5%
+	 width: 100vw;
+	 height: 10vh;
+	 background-color: yellow;
+	 z-index: 998;
+}*/
+
+
+
+
+div#goright{
+position:absolute;
+	 right: 100vw;
+	 width: 7.5vw;
+	 height: 5000px;  /*FIGURE OUT HOW TO "BRING-FORWARD" THE GREEN BOX AS IT IS CURRENTLY BEING RESTRICTED BY THE H2 TAGS  (RIGHT NOW ITS REALLY SMALL IN THE CORNER OF THE MIDDLE PAGE) */
+	 /*background-color: green; */
+	 position:absolute;
+	 right:0;
+	 top:0;
+	 z-index: 999;
+}
+
+/*div#goright2{
+position:absolute;
+	 right: 100vw;
+	 width: 5.5vw;
+	 height: 100vh;  /*FIGURE OUT HOW TO "BRING-FORWARD" THE GREEN BOX AS IT IS CURRENTLY BEING RESTRICTED BY THE H2 TAGS  (RIGHT NOW ITS REALLY SMALL IN THE CORNER OF THE MIDDLE PAGE) 
+	 background-color: green;
+	 position:absolute;
+	 right:0;
+	 bottom:-1350px;
+	 z-index: 999;
+}*/
+
+div#goleft{
+position:absolute;
+	 left: 0px;
+	 width: 6.5vw;
+	 height: 100vh;
+	 /*background-color: blue; */
+	 position:absolute;
+	 left:0;
+	 top:0;
+	 z-index: 999;
+}
+
+.tinkerbellHOMEblack{
+	left: 50%;
+	top: 43%;
+	width: auto;
+	height: 10%; 
+	position: sticky;
+	
+}
+
+#boxbot{
+	left: 50%;
+	top: 43%;
+	width: 75px;
+	height: 100px; 
+	position: sticky;
+	z-index: 1;
+}
+#boxbot:hover{ 
+	cursor: pointer;
+	/*filter: invert(100%); */
+}
+
+#boxright{
+	left: 50%;
+	top: 43%;
+	width: 75px;
+	height: 100px; 
+	position: sticky;
+	z-index: 1;
+}
+#boxright:hover{ 
+	cursor: pointer;
+	/*filter: invert(100%); */
+}
+
+#boxtop{
+	left: 50%;
+	top: 43%;
+	width: 75px;
+	height: 100px; 
+	position: sticky;
+	z-index: 1;
+}
+#boxtop:hover{ 
+	cursor: pointer;
+	/*filter: invert(100%); */
+}
+
+.tinkerbellHOME{
+	left: 50%;
+	top: 43%;
+	width: auto;
+	height: 10%; 
+	position: sticky;
+	display: none;
+}
+
+
+#tinkerbellHOMEjungle{
+	left: 50%;
+	top: 43%;
+	width: auto;
+	height: 10%;  
+	position: sticky;
+}
+#tinkerbellHOMEjungle:hover{ 
+	cursor: pointer;
+}
+
+#boxleft{
+	left: 50%;
+	top: 43%;
+	width: 75px;
+	height: 100px; 
+	position: sticky;
+	z-index: 1;
+}
+#boxleft:hover{ 
+	cursor: pointer;
+	/*filter: invert(100%); */
+}
+
+#texttop{
+	height: 10px;
+	width: auto;
+	bottom: 43%;
+	left: 50%;
+	display: none;
+	position: absolute;
+}
+#textright{
+	height: 10px;
+	width: auto;
+	bottom: 43%;
+	left: 50%;
+	display: none;
+	position: absolute;
+}
+#textbot{
+	height: 10px;
+	width: auto;
+	top: 257%;
+	left: 50%;
+	display: none;
+	position: absolute;
+}
+#textleft{
+	height: 10px;
+	width: auto;
+	bottom: -60%;
+	left: 50%;
+	display: none;
+	position: absolute;
+}
+/*
+div#goup3{
+position:absolute;
+	 top: 300%;
+	 width: 100vw;
+	 height: 10vh;
+	 background-color: yellow;
+}
+
+div#goup4{
+position:absolute;
+	 top: 400%;
+	 width: 100vw;
+	 height: 10vh;
+	 background-color: red;
+}
+*/
+
+
+
+
+
+#section1{   /* this section now has a gap between the top of the window and the image. why?? */
+
+background-color: black;
+background-image: url("../Assets/stars2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+margin: auto;
+padding: 0;
+
+}
+
+#section2{
+background-color: linear-gradient(to right, darkred, darkred 15%, green 15%, green 85%, darkred 85%);
+background-image: url("../Assets/castle2.jpg");
+background-repeat: no-repeat;
+background-size: cover; /* cover seems to be better than 100vw when you change the window page size around */
+background-position: center center;
+margin:auto;
+padding: 0;
+position: relative;
+text-align: center;
+text-shadow: 0 2px 2px black;
+
+
+
+}
+
+#section3{
+background-color: pink;
+background-image: url("../Assets/ballroom2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+margin:auto;
+padding: 0;
+
+}
+
+#section4{
+background-color: lightblue;
+background-image: url("../Assets/jungle3.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+margin:auto;
+padding: 0;
+
+}
+
+
+
+#section5{
+background-color: grey;
+background-image: url("../Assets/custom2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+margin:auto;
+padding: 0;
+position: relative;
+text-shadow: 0 2px 2px black;
+}
+
+
+
+
+
+
+#section2, #section4, #section5{
+	display: inline-block;
+	float: left;
+	
+}
+
+
+.holder{
+	width: 300vw;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100vh;
+    transform: translateX(-100vw);  /*change this to 0 to move left and right? */
+}
+
+
+
+
+/*.parent:hover #walleIMG,  /* how can i make it so it enlarges all images only when they are hovered over (not when just one is) */
+/*.parent:focus .images{
+	transform: scale(1.2);
+	
+}*/
+
+
+
+
+.images{                         
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	z-index: 899;
+	position: absolute;
+	transition: all .5s;
+}
+
+
+
+
+
+/* TOP PAGE */
+#walleIMG{                        
+	top: 100px;
+	right: 200px;
+}
+#walleIMG:hover{
+	cursor: pointer;
+}
+
+#treasureIMG{
+	top: 600px;
+	left: 300px;	
+}
+#treasureIMG:hover{
+	cursor: pointer;
+}
+
+#liloIMG{
+	top: 300px;
+	left: 100px;
+}
+#liloIMG:hover{
+	cursor: pointer;
+}
+
+/*              */
+
+
+/* LEFT PAGE */
+
+#tarzanIMG{                        
+	bottom: -200px;
+	right: 1500px;
+	position: absolute;
+}
+#tarzanIMG:hover{
+	cursor: pointer;
+}
+
+#lionkingIMG{                        
+	bottom: -770px;
+	right: 610px;
+	position: absolute;
+}
+#lionkingIMG:hover{
+	cursor: pointer;
+}
+
+#zootopiaIMG{                        
+	bottom: -400px;
+	right: 180px;
+	position: absolute;
+}
+#zootopiaIMG:hover{
+	cursor: pointer;
+}
+
+/*              */
+
+/* BOTTOM PAGE  */
+#mulanIMG{
+	top: 230%;
+    right: 80%;
+    position: absolute;
+}
+#mulanIMG:hover{
+	cursor: pointer;
+}
+
+#moanaIMG{
+	top: 250%;
+    right: 10%;
+    position: absolute;
+}
+#moanaIMG:hover{
+	cursor: pointer;
+}
+
+#cinderellaIMG{
+	top: 285%;
+    right: 40%;
+    position: absolute;
+}
+#cinderellaIMG:hover{
+	cursor: pointer;
+}
+
+/*              */
+
+
+/* RIGHT PAGE */
+.imagelist3{
+	
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	overflow: visible;
+	
+	transition: all .5s;
+}
+
+#walleIMG3{
+	top: 150px;
+	right: 250px;
+	position: absolute;
+	display: none;
+}
+#walleIMG3:hover{
+	cursor: pointer;
+}
+
+#treasureIMG3{
+	top: 360px;
+	left: 370px;
+	position: absolute;
+	display: none;
+}
+#treasureIMG3:hover{
+	cursor: pointer;
+}
+
+#liloIMG3{
+	top: 120px;
+	right: 950px;
+	position: absolute;
+	display: none;
+}
+#liloIMG3:hover{
+	cursor: pointer;
+}
+
+#tarzanIMG3{
+	bottom: 200px;
+	right: 420px;
+	position: absolute;
+	display: none;
+}
+#tarzanIMG3:hover{
+	cursor: pointer;
+}
+
+#lionkingIMG3{
+	bottom: 120px;
+	right: 820px;
+	position: absolute;
+	display: none;
+}
+#lionkingIMG3:hover{
+	cursor: pointer;
+}
+
+#zootopiaIMG3{
+	top: 140px;
+	right: 1270px;
+	position: absolute;
+	display: none;
+}
+#zootopiaIMG3:hover{
+	cursor: pointer;
+}
+
+#moanaIMG3{
+	top: 460px;
+	right: 190px;
+	position: absolute;
+	display: none;
+}
+#moanaIMG3:hover{
+	cursor: pointer;
+}
+
+#mulanIMG3{
+	bottom: 260px;
+	left: 240px;
+	position: absolute;
+	display: none;
+}
+#mulanIMG3:hover{
+	cursor: pointer;
+}
+
+#cinderellaIMG3{
+	bottom: 670px;
+	right: 670px;
+	position: absolute;
+	display: none;
+}
+#cinderellaIMG3:hover{
+	cursor: pointer;
+}
+
+/*            */
+
+
+.videoholder{
+	display: none;
+	position: absolute;
+	margin:auto;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.videoholder2{
+	display: none;
+	position: absolute;
+	margin:auto;
+	top: 140%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.videoholder3{
+	display: none;
+	position: absolute;
+	margin:auto;
+	top: 50%;
+	left: 53%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.videoholder4{
+	display: none;
+	position: absolute;
+	margin:auto;
+	top: 260%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+
+
+
+
+
+
+
+/* ANIMATION FADE IN */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+	animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/* ANIMATION END */
+
+
+
+
+/* LIST DETAILS */
+
+button:focus {outline:0;}
+#button{
+	border-radius: 25px;
+	background-color: transparent;
+    border: none;
+    color: white;
+    /* font-weight: bold; */
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    display: inline-block;
+    font-size: 24px;
+    font-family: Curly Font;
+    /*box-shadow: 2px 2px 2px black; */
+}
+#button2{
+	border-radius: 25px;
+	background-color: transparent;
+    border: none;
+    color: white;
+    /* font-weight: bold; */
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    display: inline-block;
+    font-size: 24px;
+    font-family: Curly Font;
+    /*box-shadow: 2px 2px 2px black; */
+}
+
+
+
+#button:hover{
+	background-color: #dc6d20;
+	cursor: pointer;
+}
+#button2:hover{
+	background-color: #df3645;
+	cursor: pointer;
+}
+
+
+#myInput {
+    background-image: url('../Assets/searchicon.png'); /* THIS IMAGE DOES NOT APPEAR, WHY?? */
+    background-position: 10px 12px; /* Position the search icon */
+    background-color: #e38a4c;
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 45%; /* Full-width */
+    font-size: 15px; /* Increase font-size */
+    border-radius: 25px;
+    padding: 12px 1px 12px 40px; /* Add some padding */
+    border: 1px solid #e38a4c; /* Add a grey border */
+    margin-bottom: 5px; /* Add some space below the input */
+    overflow: visible;
+}
+
+#arrow{  /* TRY AND MAKE THIS LOOK BETTER BY ANY MEANS */
+	top: 30%;
+	left: 10%;
+
+
+	opacity: 0.5;
+	width: 40px;
+	height: 45px;
+}
+
+
+.btn-group{
+  margin-left: 10px;
+  position: absolute;
+  top: 150px;
+  /* width: 128px; */
+}
+
+.btn-group2{
+  margin-left: 10px;
+  position: absolute;
+  top: 70px;
+  /* width: 128px; */
+}
+
+
+
+
+.dropdown-menu > li > a:hover{
+	cursor: pointer;
+  	background: #f1f9fd;
+  	box-shadow: 2px 2px 2px black;   /* this might not work */
+} /* $search-blue */
+
+#toggle{
+    width: 120px;
+ 	display: none;
+}
+
+.dropdown-header{
+  background: #ccc;
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.imagelist{
+	
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	overflow: visible;
+	display: block;  /*   THIS MAY NOT WORK */
+	transition: all .5s;
+}
+
+.a-tag{
+	overflow: hidden;
+	display: block;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	width: 80px;
+	height: 80px;
+
+	
+}
+
+.li-tag{
+	height: auto;
+	overflow: hidden;
+	list-style: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+ul{
+	overflow-y:scroll;
+	height: 325px; 
+}
+
+
+
+/* END LIST DETAILS */
