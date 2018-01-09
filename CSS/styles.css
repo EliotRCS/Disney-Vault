@@ -952,24 +952,23 @@ ul{
 	#arrow-left {
   		width: 0; 
   		height: 0; 
-  		border-top: 10px solid transparent;
-  		border-bottom: 10px solid transparent; 
+  		border-top: 30px solid transparent;
+  		border-bottom: 30px solid transparent; 
   		display: block;
   		top: 50%;
   		position: absolute;
-  		border-right:10px solid white;
-  		box-shadow: 2px 2px 2px black;
+  		border-right:30px solid white;
 	}
 
 	#arrow-right {
   		width: 0; 
   		height: 0;
-  		top: 50%;
+    	margin-top: 50%;
+    	margin-left: 90%;
   		display: block;
-  		box-shadow: 2px 2px 2px black;
-  		border-top: 60px solid transparent;
-  		border-bottom: 60px solid transparent;
-  		border-left: 60px solid green;
+  		border-top: 30px solid transparent;
+  		border-bottom: 30px solid transparent;
+  		border-left: 30px solid white;
 	}
 
 	.helpmessage{
@@ -1173,7 +1172,9 @@ ul{
 		display: none;
 	}
 
-
+	div#goleft{
+		display: none;
+	}
 
 
 
