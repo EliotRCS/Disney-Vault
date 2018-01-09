@@ -607,16 +607,14 @@ document.getElementById("goup1").addEventListener("mouseenter", scrollup1);
 //document.getElementById("goup3").addEventListener("mouseenter", scrollup3);    //DONT NEED THIS
 //document.getElementById("goup4").addEventListener("mouseenter", scrollup4);   //DONT NEED THIS
 
-$('#arrow-left').on('click', function(){
-  document.getElementById("holder").style.transform = "none";
-})
+
+document.getElementById("arrow-left").onclick = function() {scrollLeft()};
 
 document.getElementById("goleft").addEventListener("mouseenter", scrollLeft);
 document.getElementById("goright").addEventListener("mouseenter", scrollRight);
 
-$('#arrow-right').on('click', function(){
-  document.getElementById("holder").style.transform = "translateX(-100vw)"; 
-})
+document.getElementById("arrow-right").onclick = function() {scrollRight2()};
+
 //document.getElementById("goright2").addEventListener("mouseenter", scrollRight2);
 
 
