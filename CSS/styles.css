@@ -1014,7 +1014,8 @@ ul{
 
 	.helpmessageleft{
 		font-size: 120%;
-		right: 5%;
+		right: 8%;
+		top: 155%;
 	}
 
 	h5.helpmessage{
@@ -1044,6 +1045,10 @@ ul{
 
 	.videoholder{
 		top: 47%;
+	}
+	.videoholder2{
+		top: 170%;
+		left: 50%;
 	}
 	.videoholder3{
 		top: 56%;
@@ -1135,12 +1140,12 @@ ul{
 	/*              */
 
 	/*BOTTOM PAGE  */
-	#moanaIMG{
-		top: 110%;
-	}
-
 	#cinderellaIMG{
 		top: 310%;
+	}
+
+	#moanaIMG{
+		top: 285%;
 	}
 
 	#mulanIMG{
@@ -1150,13 +1155,17 @@ ul{
 
 	/*LEFT PAGE */
 	#lionkingIMG{
-		bottom: -150px;
+		bottom: -185px;
 		right: 240px;
 	}
 
 	#tarzanIMG{
-		bottom: -540px;
+		bottom: -565px;
     	right: 110px;
+	}
+
+	#zootopiaIMG{
+		bottom: -470px;
 	}
 
 	/*          */
