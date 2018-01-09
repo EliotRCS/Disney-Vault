@@ -609,14 +609,14 @@ document.getElementById("goup1").addEventListener("mouseenter", scrollup1);
 
 $('#arrow-left').on('click', function(){
   document.getElementById("holder").style.transform = "none";
-}
+})
 
 document.getElementById("goleft").addEventListener("mouseenter", scrollLeft);
 document.getElementById("goright").addEventListener("mouseenter", scrollRight);
 
 $('#arrow-right').on('click', function(){
   document.getElementById("holder").style.transform = "translateX(-100vw)"; 
-}
+})
 //document.getElementById("goright2").addEventListener("mouseenter", scrollRight2);
 
 
