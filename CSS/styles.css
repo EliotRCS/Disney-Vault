@@ -981,6 +981,7 @@ ul{
 
 	.helpmessageleft{
 		font-size: 120%;
+		right: 5%;
 	}
 
 	h5.helpmessage{
@@ -1016,7 +1017,7 @@ ul{
 		left: 56.5%;
 	}
 	.videoholder4{
-		top: 254%;
+		top: 270%;
 	}
 
 	iframe{
@@ -1090,7 +1091,7 @@ ul{
 	}
 
 	#treasureIMG{
-		top: 550px;
+		top: 450px;
 		left: 87.9px;	
 	}
 
@@ -1102,11 +1103,31 @@ ul{
 
 	/*BOTTOM PAGE  */
 	#moanaIMG{
-		top: 210%;
+		top: 410%;
     	right: 10%;
-    	position: absolute;
+	}
+
+	#cinderellaIMG{
+		top: 310%;
+	}
+
+	#mulanIMG{
+		top: 280%;
 	}
 	/*               */
+
+	/*LEFT PAGE */
+	#lionkingIMG{
+		bottom: -150px;
+		right: 240px;
+	}
+
+	#tarzanIMG{
+		bottom: -540px;
+    	right: 110px;
+	}
+
+	/*          */
 
 	/* RIGHT PAGE  */
 	#walleIMG3{
@@ -1162,6 +1183,7 @@ ul{
 	}
 	/*            */
 
+	/* no tinkerbell! */
 	.tinkerbellHOMEblack{
 		display: none;
 	}
@@ -1176,6 +1198,9 @@ ul{
 		display: none;
 	}
 
-
+	#boxtop #boxbot #boxright{
+		display: none;
+	}
+	/*                */
 
 } /*END OF MEDIA QUERY FOR PHONE*/
