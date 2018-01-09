@@ -932,7 +932,10 @@ ul{
 }
 
 
-.arrow-left {
+#arrow-left {
+	display: none;
+}
+#arrow-right {
 	display: none;
 }
 /* END LIST DETAILS */
@@ -946,7 +949,7 @@ ul{
 		font-size: 350%;
 	}
 
-	.arrow-left {
+	#arrow-left {
   		width: 0; 
   		height: 0; 
   		border-top: 10px solid transparent;
@@ -956,6 +959,17 @@ ul{
   		position: absolute;
   		border-right:10px solid white;
   		box-shadow: 2px 2px 2px black;
+	}
+
+	#arrow-right {
+  		width: 0; 
+  		height: 0;
+  		top: 50%;
+  		display: block;
+  		box-shadow: 2px 2px 2px black;
+  		border-top: 60px solid transparent;
+  		border-bottom: 60px solid transparent;
+  		border-left: 60px solid green;
 	}
 
 	.helpmessage{
@@ -990,10 +1004,10 @@ ul{
 		left: 71%;  /* WHY IS THERE A LARGE PADDING BY THIS LEFT HOME PAGE MESSAGE??????*/
 	}
 
-	.tinkerbellHOME{
-		position: fixed;  /*TEST THIS TO SEE IF TINKERBELL STAYS IN THE MIDDLE ON MY IPHONE 6*/
+	/*.tinkerbellHOME{
+		position: fixed;  /*TEST THIS TO SEE IF TINKERBELL STAYS IN THE MIDDLE ON MY IPHONE 6
 		display: block;
-	}
+	}*/
 
 	.videoholder{
 		top: 47%;
@@ -1148,6 +1162,16 @@ ul{
 		right: 150px;
 	}
 	/*            */
+
+	.tinkerbellHOMEblack{
+		display: none;
+	}
+	.tinkerbellHOME{
+		display: none;
+	}
+	#tinkerbellHOMEjungle{
+		display: none;
+	}
 
 
 

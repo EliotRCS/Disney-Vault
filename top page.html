@@ -1,0 +1,228 @@
+<!DOCTYPE html>   <!-- type <html and then enter, to get the defualt start layout-->
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css"  href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css"  href="http://www.jeasyui.com/easyui/themes/icon.css">
+	<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="JS/Main.js"></script>
+	
+</head>
+<body>   <!-- onLoad="window.scroll(0, 150)" -->
+
+
+	
+	<section id="section1"> <!-- this is the top page -->
+		<h4 class="helpmessage">Try clicking one of those images...</h4>
+
+		
+	<div id="walleTR" class="videoholder">
+		<iframe style="background: none repeat scroll 0 0 blue; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/alIq_wG9FNk?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+	</div>
+	<div id="liloTR" class="videoholder">
+		<iframe style="background: none repeat scroll 0 0 blue; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/wAtaSKQ4-T0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>  <!-- i took out allowscriptaccess="always" -->
+	</div>
+	<div id="treasureTR" class="videoholder">
+		<iframe style="background: none repeat scroll 0 0 blue; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/NWLv9XCM3fs?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+	</div>
+	<div class="parent">
+		<img class="images" id="walleIMG" src="Assets/walle.gif"/>
+		<img class="images" id="liloIMG" src="Assets/lilo.gif"/>
+		<img class="images" id="treasureIMG" src="Assets/treasureplanet.gif"/>
+	</div>
+		<!-- <div id="godown"></div> -->	
+			<div class="box" id="boxtop"></div>
+			<img class="tinkerbellHOMEblack" id="tinkerbellHOMEtop" src="Assets/tinkerbell.png"/>
+			<img class="tinkerbellHOME" src="Assets/tinkerbell3.png"/>
+		<p id="texttop">HOME</p>
+		
+	</section>
+
+
+	<div id="holder" class="holder">
+		<section id="section4"> <!-- this is the left page -->
+			<!-- <div id="goright2"></div> -->
+			<h4 class="helpmessageleft">Try clicking one of those images...</h4>
+			<div class="boxjungle" id="boxleft"></div>
+			<img id="tinkerbellHOMEjungle" src="Assets/tinkerbell.png"/>
+			<img class="tinkerbellHOME" src="Assets/tinkerbell3.png"/>
+			<p id="textleft">HOME</p>
+
+			<div id="arrow-right"></div>
+
+			<div id="tarzanTR" class="videoholder2">
+				<iframe style="background: none repeat scroll 0 0 green; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/cB3NW3O_OfE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+			</div>
+			<div id="lionkingTR" class="videoholder2">
+				<iframe style="background: none repeat scroll 0 0 green; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/jOIu472cCq0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer&amp;iv_load_policy=3" frameborder="0"></iframe>
+			</div>
+			<div id="zootopiaTR" class="videoholder2">
+				<iframe style="background: none repeat scroll 0 0 green; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/jWM0ct-OLsM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+			</div>
+							
+
+			<div class="parent"></div>
+				<img class="images" id="tarzanIMG" src="Assets/tarzan.gif"/>
+				<img class="images" id="lionkingIMG" src="Assets/lionking.gif"/>
+				<img class="images" id="zootopiaIMG" src="Assets/zootopia.gif"/>
+		</section>
+
+
+		<section id="section2"> <!-- this is the centre page -->
+			<div onclick="off()"></div>   <!-- IS THERE ANYWAY TO MAKE THE BUTTON TURN ON OR OFF THE HOVER MOUSE SCROLL FEATURE?        CAN I CHANGE HOW THE BUTTON LOOKS?-->
+			<div style="padding: 50px; top: 50px">
+				<!-- button onclick="on()">Turn on film search effect</button></div>  USE THIS LATER -->
+			</div>
+
+			<h5 class="helpmessage">Try moving your mouse to the top...</h5>
+			<h6 class="helpmessage2">Or try the bottom...</h6>
+			<h7 class="helpmessage3">Or even the sides...</h7>
+			<h7 class="helpmessage3" id="helpmessageside">Or even the sides...</h7>
+
+			<div id="arrow-left"></div>
+
+			<h2 class="animated animatedFadeInUp fadeInUp" id="Welcome" class="animate" style="top: 34%; ">WELCOME TO</h2>
+			<h3 class="animated animatedFadeInUp fadeInUp" id="Vault" class="animate" style="	top: 35%; ">DISNEY VAULT..</h3>
+			<div id="godown1"></div><div id="goup1"></div><div id="goleft"></div><div id="goright"></div>
+		</section>
+
+
+		<section id="section5"> <!-- this is the right page -->
+			<h2>CREATE YOUR OWN FILM PAGE</h2>
+			<div class="box" id="boxright"></div>
+			<img class="tinkerbellHOMEblack" src="Assets/tinkerbell.png"/>
+			<img class="tinkerbellHOME" src="Assets/tinkerbell3.png"/>
+			<p id="textright">HOME</p>
+
+			<div id="walleTR3" class="videoholder3">
+				<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/alIq_wG9FNk?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+			</div>
+			<div id="treasureTR3" class="videoholder3">
+				<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/NWLv9XCM3fs?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+			</div>
+			<div id="liloTR3" class="videoholder3">
+				<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/wAtaSKQ4-T0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+			</div>
+			<div id="tarzanTR3" class="videoholder3">
+				<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/cB3NW3O_OfE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+			</div>
+			<div id="lionkingTR3" class="videoholder3">
+				<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/jOIu472cCq0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer&amp;iv_load_policy=3" frameborder="0"></iframe>
+			</div>
+			<div id="zootopiaTR3" class="videoholder3">
+				<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/jWM0ct-OLsM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+			</div>
+			<div id="moanaTR3" class="videoholder3">
+				<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/C6PbWhWGUrY?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+			</div>
+			<div id="mulanTR3" class="videoholder3">
+				<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/MsAniqGowKE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+			</div>
+			<div id="cinderellaTR3" class="videoholder3">
+				<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/cL-RjWKtZrM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+			</div>
+			<div class="parent">
+				<img class="imagelist" id="walleIMG3" src="Assets/walle.gif"/>
+				<img class="imagelist" id="liloIMG3" src="Assets/lilo.gif"/>
+				<img class="imagelist" id="treasureIMG3" src="Assets/treasureplanet.gif"/>
+				<img class="imagelist" id="tarzanIMG3" src="Assets/tarzan.gif"/>
+				<img class="imagelist" id="lionkingIMG3" src="Assets/lionking.gif"/>
+				<img class="imagelist" id="zootopiaIMG3" src="Assets/zootopia.gif"/>
+				<img class="imagelist" id="mulanIMG3" src="Assets/mulan.gif"/>
+				<img class="imagelist" id="moanaIMG3" src="Assets/moana.gif"/>
+				<img class="imagelist" id="cinderellaIMG3" src="Assets/cinderella.gif"/>
+			</div>
+
+			<div class="btn-group2">
+    		<button id="button2" onclick="clearIMG()">Clear<!-- type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false" -->
+      		<!-- <span class="glyphicon glyphicon-chevron-down"></span> -->
+    		</button>
+    		</div>
+
+    		
+    		
+			<div class="btn-group">
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for films..">
+
+    		<button id="button" onclick="showlist()">Disney Film List<!-- type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false" -->
+      		<!-- <span class="glyphicon glyphicon-chevron-down"></span> -->
+    		</button>
+    		<!-- <img id="arrow" src="Assets/arrow.png"/> -->
+    		
+			<ul class="dropdown-menu" id="toggle">
+				
+				<!-- <li class="dropdown-header">TITLE</li> -->
+				<li class="li-tag drag" id="wall" >FANTASY FILMS
+					<a class="a-tag"><img class="imagelist3" id="walleIMG4" src="Assets/walle.gif">fantasy</a> <!-- DONT INCLUDE href="#" as this make the images move page-->
+				</li>
+				<li class="li-tag drag">	
+					<a class="a-tag"><img class="imagelist3" id="liloIMG4" src="Assets/lilo.gif">fantasy</a>
+				</li>
+				<li class="li-tag drag" >
+					<a class="a-tag"><img class="imagelist3" id="treasureIMG4" src="Assets/treasureplanet.gif">fantasy</a>
+				</li>
+				<li class="li-tag drag" id="wall" >JUNGLE FILMS
+					<a class="a-tag"><img class="imagelist3" id="tarzanIMG4" src="Assets/tarzan.gif">jungle</a> <!-- DONT INCLUDE href="#" as this make the images move page-->
+				</li>
+				<li class="li-tag drag">	
+					<a class="a-tag"><img class="imagelist3" id="lionkingIMG4" src="Assets/lionking.gif">jungle</a>
+				</li>
+				<li class="li-tag drag">	
+					<a class="a-tag"><img class="imagelist3" id="zootopiaIMG4" src="Assets/zootopia.gif">jungle</a>
+				</li>
+				<li class="li-tag drag">PRINCESS FILMS	
+					<a class="a-tag"><img class="imagelist3" id="moanaIMG4" src="Assets/moana.gif">moana</a>  <!-- MAKE IT SO WHEN A SPECIFIC FILM IS SEARCHED THE TITLE PRINCESS FILMS IS THERE FOR ALL OF THEM -->
+				</li>
+				<li class="li-tag drag">	
+					<a class="a-tag"><img class="imagelist3" id="mulanIMG4" src="Assets/mulan.gif">mulan</a>
+				</li>
+				<li class="li-tag drag">	
+					<a class="a-tag"><img class="imagelist3" id="cinderellaIMG4" src="Assets/cinderella.gif">cinderella</a>
+				</li>
+			</ul>
+			</div> 
+		</section>
+	</div>
+
+
+
+	<section id="section3"> <!-- this is bottom page -->
+		<h4 class="helpmessagebot">Try clicking one of those images...</h4>
+		<!-- <div id="goup2"></div> -->
+		<div class="box" id="boxbot"></div>
+		<img class="tinkerbellHOMEblack" src="Assets/tinkerbell.png"/>
+		<img class="tinkerbellHOME" src="Assets/tinkerbell3.png"/>
+		<p id="textbot">HOME</p>
+
+		<div id="moanaTR" class="videoholder4">
+			<iframe style="background: none repeat scroll 0 0 pink; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/C6PbWhWGUrY?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+		</div>
+		<div id="cinderellaTR" class="videoholder4">
+			<iframe style="background: none repeat scroll 0 0 pink; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/cL-RjWKtZrM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+		</div>
+		<div id="mulanTR" class="videoholder4">
+			<iframe style="background: none repeat scroll 0 0 pink; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" width="560" height="315" src="https://www.youtube.com/embed/MsAniqGowKE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0"></iframe>
+		</div>
+		<div class="parent">
+			<img class="images" id="moanaIMG" src="Assets/moana.gif"/>
+			<img class="images" id="mulanIMG" src="Assets/mulan.gif"/>
+			<img class="images" id="cinderellaIMG" src="Assets/cinderella.gif"/>
+		</div>
+	</section>
+
+
+	
+	<!-- DONT NEED THIS FOR FINAL IDEA
+	<section id="section4"><h1>4</h1><div id="godown3"></div><div id="goup3"></div></section>
+	<section id="section5"><h1>5</h1><div id="godown3"></div><div id="goup4"></div></section>
+	-->
+
+
+</body>
+
+
+
+
