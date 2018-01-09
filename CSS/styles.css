@@ -55,6 +55,8 @@ h2, h3{
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	opacity: 0.5;
 	z-index: 1;
 }
@@ -67,6 +69,8 @@ h2, h3{
 	top: 255%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	opacity: 0.5;
 	z-index: 1;
 }
@@ -79,6 +83,8 @@ h2, h3{
 	top: 140%;
 	right: 27%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	opacity: 0.5;
 	z-index: 1;
 }
@@ -92,6 +98,8 @@ h5.helpmessage{
 	top: 10%;
 	left: 25%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	opacity: 0.5;
 }
 
@@ -104,6 +112,8 @@ h6.helpmessage2{
 	top: 80%;
 	left: 80%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	opacity: 0.5;
 }
 
@@ -116,6 +126,8 @@ h6.helpmessage2{
 	top: 40%;
 	left: 15%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	opacity: 0.5;
 }
 
@@ -128,6 +140,8 @@ h6.helpmessage2{
 	top: 40%;
 	left: 85%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	opacity: 0.5;
 }
 
@@ -443,6 +457,8 @@ text-shadow: 0 2px 2px black;
     box-sizing: border-box;
     height: 100vh;
     transform: translateX(-100vw);  /*change this to 0 to move left and right? */
+    -webkit-transform: translateX(-100vw);
+    -ms-transform: translateX(-100vw);
 }
 
 
@@ -671,6 +687,8 @@ text-shadow: 0 2px 2px black;
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	z-index: 2;
 }
 iframe{
@@ -685,6 +703,8 @@ iframe{
 	top: 140%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	z-index: 2;
 }
 
@@ -695,6 +715,8 @@ iframe{
 	top: 50%;
 	left: 53%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	z-index: 2;
 }
 
@@ -705,6 +727,8 @@ iframe{
 	top: 260%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	z-index: 2;
 }
 
@@ -740,10 +764,14 @@ iframe{
 @keyframes fadeInUp {
     from {
         transform: translate3d(0,40px,0)
+        -webkit-transform: translate3d(0,40px,0)
+        -ms-transform: translate3d(0,40px,0)
     }
 
     to {
         transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
         opacity: 1
     }
 }
@@ -751,10 +779,14 @@ iframe{
 @-webkit-keyframes fadeInUp {
     from {
         transform: translate3d(0,40px,0)
+        -webkit-transform: translate3d(0,40px,0)
+        -ms-transform: translate3d(0,40px,0)
     }
 
     to {
         transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
         opacity: 1
     }
 }
@@ -977,6 +1009,7 @@ ul{
 
 	.helpmessagebot{
 		font-size: 120%;
+		top: 265%;
 	}
 
 	.helpmessageleft{
@@ -1013,7 +1046,7 @@ ul{
 		top: 47%;
 	}
 	.videoholder3{
-		top: 53%;
+		top: 56%;
 		left: 56.5%;
 	}
 	.videoholder4{
@@ -1103,8 +1136,7 @@ ul{
 
 	/*BOTTOM PAGE  */
 	#moanaIMG{
-		top: 410%;
-    	right: 10%;
+		top: 110%;
 	}
 
 	#cinderellaIMG{
@@ -1112,7 +1144,7 @@ ul{
 	}
 
 	#mulanIMG{
-		top: 280%;
+		top: 290%;
 	}
 	/*               */
 
@@ -1198,7 +1230,7 @@ ul{
 		display: none;
 	}
 
-	#boxtop #boxbot #boxright{
+	#boxtop, #boxbot, #boxright{
 		display: none;
 	}
 	/*                */
