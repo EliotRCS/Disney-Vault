@@ -1,3 +1,10 @@
+
+
+
+  /*SIZE FOR EVERYTHING BIGGER THAN AN IPAD SCREEN OF 768*/
+
+
+
 body {
 
 	margin: 0;
@@ -216,6 +223,7 @@ position:absolute;
 	width: auto;
 	height: 10%; 
 	position: sticky;
+	position: -webkit-sticky; /*SAFARI*/
 	
 }
 
@@ -225,6 +233,7 @@ position:absolute;
 	width: 75px;
 	height: 100px; 
 	position: sticky;
+	position: -webkit-sticky; /*SAFARI*/
 	z-index: 1;
 }
 #boxbot:hover{ 
@@ -238,6 +247,7 @@ position:absolute;
 	width: 75px;
 	height: 100px; 
 	position: sticky;
+	position: -webkit-sticky; /*SAFARI*/
 	z-index: 1;
 }
 #boxright:hover{ 
@@ -251,6 +261,7 @@ position:absolute;
 	width: 75px;
 	height: 100px; 
 	position: sticky;
+	position: -webkit-sticky; /*SAFARI*/
 	z-index: 1;
 }
 #boxtop:hover{ 
@@ -264,6 +275,7 @@ position:absolute;
 	width: auto;
 	height: 10%; 
 	position: sticky;
+	position: -webkit-sticky; /*SAFARI*/
 	display: none;
 }
 
@@ -274,6 +286,7 @@ position:absolute;
 	width: auto;
 	height: 10%;  
 	position: sticky;
+	position: -webkit-sticky; /*SAFARI*/
 }
 #tinkerbellHOMEjungle:hover{ 
 	cursor: pointer;
@@ -285,6 +298,7 @@ position:absolute;
 	width: 75px;
 	height: 100px; 
 	position: sticky;
+	position: -webkit-sticky; /*SAFARI*/
 	z-index: 1;
 }
 #boxleft:hover{ 
@@ -659,6 +673,10 @@ text-shadow: 0 2px 2px black;
 	transform: translate(-50%, -50%);
 	z-index: 2;
 }
+iframe{
+	width: 560px;
+	height: 315px;
+}
 
 .videoholder2{
 	display: none;
@@ -691,7 +709,27 @@ text-shadow: 0 2px 2px black;
 }
 
 
+/*#section4 h2{
+	top: 34%; 
+	font-size: 230%;
+}*/
+/*#section4 h3{
+	top: 35%; 
+	font-size: 700%;
+}*/
+#Welcome{
+	font-size: 230%;
+}
+#Vault{
+	font-size: 700%;
+}
 
+
+#section5 h2{  /*TITLE IN LEFT PAGE*/
+	left: 37%; 
+	top: 1%; 
+	font-size: 270%;
+}
 
 
 
@@ -795,13 +833,17 @@ button:focus {outline:0;}
     background-position: 10px 12px; /* Position the search icon */
     background-color: #e38a4c;
     background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 45%; /* Full-width */
     font-size: 15px; /* Increase font-size */
     border-radius: 25px;
-    padding: 12px 1px 12px 40px; /* Add some padding */
+    padding: 12px 1px 12px 1px; /* Add some padding */
     border: 1px solid #e38a4c; /* Add a grey border */
     margin-bottom: 5px; /* Add some space below the input */
     overflow: visible;
+	position: absolute;
+	width: 70%;
+	margin-top: 22.6%;
+	left: 1%;
+	z-index: 99;
 }
 
 #arrow{  /* TRY AND MAKE THIS LOOK BETTER BY ANY MEANS */
@@ -841,6 +883,8 @@ button:focus {outline:0;}
 #toggle{
     width: 120px;
  	display: none;
+ 	top: 161%;
+ 	position: absolute;
 }
 
 .dropdown-header{
@@ -888,5 +932,225 @@ ul{
 }
 
 
-
+.arrow-left {
+	display: none;
+}
 /* END LIST DETAILS */
+
+
+@media screen and (max-width: 420px) {  /* SIZE OF EVERYTHING THE SIZE OF AN IPHONE OR SMALLER*/  /*1280 width for computers       375:1280       1:3.413333333  or 0.29296875:1*/
+	#Welcome{
+		font-size: 115%;
+	}
+	#Vault{
+		font-size: 350%;
+	}
+
+	.arrow-left {
+  		width: 0; 
+  		height: 0; 
+  		border-top: 10px solid transparent;
+  		border-bottom: 10px solid transparent; 
+  		display: block;
+  		top: 50%;
+  		position: absolute;
+  		border-right:10px solid white;
+  		box-shadow: 2px 2px 2px black;
+	}
+
+	.helpmessage{
+		font-size: 120%;
+	}
+
+	.helpmessagebot{
+		font-size: 120%;
+	}
+
+	.helpmessageleft{
+		font-size: 120%;
+	}
+
+	h5.helpmessage{
+		font-size: 120%;
+		left: 30%
+	}
+
+	h6.helpmessage2{
+		font-size: 120%;
+		top: 86%;
+	}
+
+	.helpmessage3{
+		font-size: 120%;
+		left: 17%;
+	}
+
+	#helpmessageside{
+		font-size: 120%;
+		left: 71%;  /* WHY IS THERE A LARGE PADDING BY THIS LEFT HOME PAGE MESSAGE??????*/
+	}
+
+	.tinkerbellHOME{
+		position: fixed;  /*TEST THIS TO SEE IF TINKERBELL STAYS IN THE MIDDLE ON MY IPHONE 6*/
+		display: block;
+	}
+
+	.videoholder{
+		top: 47%;
+	}
+	.videoholder3{
+		top: 53%;
+		left: 56.5%;
+	}
+	.videoholder4{
+		top: 254%;
+	}
+
+	iframe{
+		width: 240px;
+		height: 120px;
+	}
+
+    .images{                         
+		width: 55px;
+		height: 55px;
+	}
+
+	#section5 h2{
+		text-align: center;
+		font-size: 250%;
+		left: 0%;
+	}
+
+	.imagelist{
+		width: 37px;
+		height: 37px;
+
+	}
+	.imagelist3{
+		width: 40px;
+		height: 40px;
+	}
+	.a-tag{
+		width: 40px;
+		height: 40px;	
+	}
+	#button{
+		padding:2px 10px;
+		font-size: 18px;
+	}
+	#button2{
+		padding:2px 10px;
+		font-size: 18px;
+		margin-top: 60%;
+	}
+	#myInput{
+		font-size: 12px;
+		position: absolute;
+		width: 80%;
+		padding:2px 1px 2px 1px;
+		margin-top: 25.4px; /*26.3*/
+		left: 1%;
+		z-index: 99;
+	}
+	ul{
+		height: 190px;
+	}
+	#wall{
+		padding-top: 5px;
+	}
+	#toggle{
+		width: 66px;
+		left: -27%;
+		top: 117%;
+		position: absolute;
+	}
+	li{
+		font-size: 10px;
+	}
+
+
+	/* TOP PAGE */
+	#walleIMG{                        
+		top: 100px;
+		right: 58.6px;
+	}
+
+	#treasureIMG{
+		top: 550px;
+		left: 87.9px;	
+	}
+
+	#liloIMG{
+		top: 100px;
+		left: 29.3px;
+	}
+	/*              */
+
+	/*BOTTOM PAGE  */
+	#moanaIMG{
+		top: 210%;
+    	right: 10%;
+    	position: absolute;
+	}
+	/*               */
+
+	/* RIGHT PAGE  */
+	#walleIMG3{
+		top: 230px;
+		right: 73px;
+	}
+
+
+	#treasureIMG3{
+		top: 473px;
+		left: 20px;
+	}
+
+
+	#liloIMG3{
+		top: 220px;
+		right: 220px;
+	}
+
+
+	#tarzanIMG3{
+		bottom: 90px;
+		right: 123px;
+	}
+
+
+	#lionkingIMG3{
+		bottom: 50px;
+		right: 240px;
+	}
+
+	#zootopiaIMG3{
+		top: 140px;
+		left: 315px;
+	}
+
+
+	#moanaIMG3{
+		top: 440px;
+		right: 16px;
+	}
+
+
+	#mulanIMG3{
+		bottom: 19px;
+		right: 50px;  /*DOESNT SEEM TO CHANGE ANYTHING*/
+	}
+
+
+	#cinderellaIMG3{
+		bottom: 470px;
+		right: 150px;
+	}
+	/*            */
+
+
+
+
+
+} /*END OF MEDIA QUERY FOR PHONE*/
