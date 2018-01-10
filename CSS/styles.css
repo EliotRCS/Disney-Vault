@@ -82,7 +82,7 @@ h2, h3{
     position: relative;
     font-size: 30px;
 }
-#container: hover{
+#container:hover{
 	cursor: pointer;
 }
 #youtubeGuide{
@@ -96,7 +96,7 @@ h2, h3{
     position: relative;
     font-size: 30px;
 }
-#container2: hover{
+#container2:hover{
 	cursor: pointer;
 }
 #report{
@@ -444,7 +444,7 @@ padding: 0;
 }
 
 #section2{
-background-color: linear-gradient(to right, darkred, darkred 15%, green 15%, green 85%, darkred 85%);
+background-color: lightblue;  /* background-color: linear-gradient(to right, darkred, darkred 15%, green 15%, green 85%, darkred 85%); something i played about with*/
 background-image: url("../Assets/castle2.jpg");
 background-repeat: no-repeat;
 background-size: cover; /* cover seems to be better than 100vw when you change the window page size around */
@@ -822,8 +822,8 @@ iframe{
 @keyframes fadeInUp {
     from {
         transform: translate3d(0,40px,0)
-        -webkit-transform: translate3d(0,40px,0)
-        -ms-transform: translate3d(0,40px,0)
+        ;-webkit-transform: translate3d(0,40px,0)
+        ;-ms-transform: translate3d(0,40px,0)
     }
 
     to {
@@ -1045,7 +1045,7 @@ ul{
   		border-top: 30px solid transparent;
   		border-bottom: 30px solid transparent; 
   		display: block;
-  		top: 50%;
+  		top: 50%;#
   		position: absolute;
   		border-right:30px solid white;
 	}
