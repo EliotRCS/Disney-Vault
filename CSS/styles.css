@@ -1045,9 +1045,9 @@ ul{
   		border-top: 30px solid transparent;
   		border-bottom: 30px solid transparent; 
   		display: block;
-  		top: 50%;#
+  		top: 50%;
   		position: absolute;
-  		border-right:30px solid white;
+  		border-right: 30px solid white;
 	}
 
 	#arrow-right {
