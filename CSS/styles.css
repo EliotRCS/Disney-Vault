@@ -1,10 +1,5 @@
 
 
-
-  /*SIZE FOR EVERYTHING BIGGER THAN AN IPAD SCREEN OF 768*/
-
-
-
 body {
 
 	margin: 0;
@@ -30,6 +25,39 @@ body {
 	src: url('../Assets/akaDora.ttf') format("truetype");
 }
 
+#pagetwo{
+	background-color: grey;
+}
+
+#paragraphone{
+	display: block;
+}
+
+#ReportBG{
+	background-color: white;
+	color: black;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+	padding: 0;
+	overflow-y: scroll;
+	height: 100vh;
+}
+.subheading{
+	font-family: Georgia, serif;
+	font-size: 20px;
+	padding-left: 15px;
+	text-decoration: underline;
+}
+.normaltext{
+	font-size: 14px;
+	font-family: Georgia, serif;
+	padding-left: 15px;
+}
+.title{
+	text-align: center;
+	font-size: 45px;
+}
 
 section{
 	width: 100vw;
@@ -44,6 +72,35 @@ h2, h3{
 	margin: 5px;
 	position: relative;
 	
+}
+
+
+#container{
+	top: 100px;
+    left: 70%;
+    width: 100px;
+    position: relative;
+    font-size: 30px;
+}
+#container: hover{
+	cursor: pointer;
+}
+#youtubeGuide{
+	width: 100px;
+}
+
+#container2{
+	top: 100px;
+    left: 30%;
+    width: 100px;
+    position: relative;
+    font-size: 30px;
+}
+#container2: hover{
+	cursor: pointer;
+}
+#report{
+	width: 100px;
 }
 
 .helpmessage{
@@ -694,6 +751,7 @@ text-shadow: 0 2px 2px black;
 iframe{
 	width: 560px;
 	height: 315px;
+	border: 0; /* JUST ADDED THIS MIGHT JUST PUT NOTHING INSTEAD */
 }
 
 .videoholder2{
@@ -1020,7 +1078,7 @@ ul{
 
 	h5.helpmessage{
 		font-size: 120%;
-		left: 30%
+		left: 33%
 	}
 
 	h6.helpmessage2{
@@ -1037,11 +1095,7 @@ ul{
 		font-size: 120%;
 		left: 71%;  /* WHY IS THERE A LARGE PADDING BY THIS LEFT HOME PAGE MESSAGE??????*/
 	}
-
-	/*.tinkerbellHOME{
-		position: fixed;  /*TEST THIS TO SEE IF TINKERBELL STAYS IN THE MIDDLE ON MY IPHONE 6
-		display: block;
-	}*/
+	
 
 	.videoholder{
 		top: 47%;
@@ -1108,7 +1162,7 @@ ul{
 	ul{
 		height: 190px;
 	}
-	#wall{
+	#gap{
 		padding-top: 5px;
 	}
 	#toggle{
