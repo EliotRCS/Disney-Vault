@@ -21,66 +21,6 @@ body {
 	src: url('../Assets/akaDora.ttf') format("truetype");
 }
 
-#pagetwo{
-	background-color: grey;
-}
-
-#paragraphone{
-	display: block;
-}
-.paragraph{
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-size: 14px;
-    font-family: Georgia, serif;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.link{
-	font-style: italic;
-	font-size: 12px;
-	font-family: "Times New Roman", Times, serif;
-	overflow: hidden;
-	padding-bottom: 25px;
-}
-
-#ReportBG{
-	background-color: white;
-	color: black;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-	padding: 0;
-	overflow-y: scroll;
-	height: 100vh;
-}
-.subheading{
-	font-family: Georgia, serif;
-	font-size: 20px;
-	padding-left: 15px;
-	text-decoration: underline;
-}
-.normaltext{
-	font-size: 14px;
-	font-family: Georgia, serif;
-	padding-left: 30px;
-    padding-right: 30px;
-}
-.title{
-	text-align: center;
-	font-size: 45px;
-
-	
-}
-#stickyart{
-	top: 20px;
-	background-color: white;
-	width: 100vw;
-	position: sticky;
-	position: -webkit-sticky; /*SAFARI*/
-}
-
 section{
 	width: 100vw;
 	height: 100vh;
@@ -970,6 +910,69 @@ ul{
 	display: none;
 }
 /* END LIST DETAILS */
+
+/* REPORT PAGE  */
+#pagetwo{
+	background-color: grey;
+}
+
+#paragraphone{
+	display: block;
+}
+.paragraph{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 14px;
+	font-family: Georgia, serif;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.link{
+	font-style: italic;
+	font-size: 12px;
+	font-family: "Times New Roman", Times, serif;
+	overflow: hidden;
+	padding-bottom: 25px;
+}
+
+#ReportBG{
+	background-color: white;
+	color: black;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 0;
+	overflow-y: scroll;
+	height: 100vh;
+}
+.subheading{
+	font-family: Georgia, serif;
+	font-size: 20px;
+	padding-left: 15px;
+	text-decoration: underline;
+}
+.normaltext{
+	font-size: 14px;
+	font-family: Georgia, serif;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.title{
+	text-align: center;
+	font-size: 45px;
+
+	
+}
+#stickyart{
+	top: 20px;
+	background-color: white;
+	width: 100vw;
+	position: sticky;
+	position: -webkit-sticky; /*SAFARI*/
+}
+
+/*              */
 
 
 @media screen and (max-width: 420px) {  /* SIZE OF EVERYTHING THE SIZE OF AN IPHONE OR SMALLER*/ 
