@@ -1,74 +1,218 @@
-<!DOCTYPE html>
+<!DOCTYPE html>   <!-- type <html and then enter, to get the defualt start layout-->
 <html>
-<head>
-
-	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css"  href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
-	<link rel="stylesheet" type="text/css"  href="http://www.jeasyui.com/easyui/themes/icon.css">
-	<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+	<head>
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css"  href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+		<link rel="stylesheet" type="text/css"  href="http://www.jeasyui.com/easyui/themes/icon.css">
+		<script src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>  <!-- library that allows use of more specific JS -->				<!--type="text/javascript"  TOOK THIS OUT-->
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="JS/Main.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="JS/Main.js"></script> <!--type="text/javascript"  TOOK THIS OUT-->
+	
+		<title>Disney Vault</title>
+	</head>
+	<body>   
 
 
-	<title>My Report</title>
-</head>
-<body id="pagetwo">
-	<div id="ReportBG">
+	
+		<section id="section1"> <!-- this is the top page -->
+			<h4 class="helpmessage">Try clicking one of those images...</h4>
 
-		<div id="paragraphone">
-			<div id="stickyart">
-				<h1 class="title">Web Authoring Report - By Eliot Smith</h1>
+		
+			<div id="walleTR" class="videoholder"> <!-- contains videos to be shown on site -->
+				<iframe style="background: none repeat scroll 0 0 blue; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/alIq_wG9FNk?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"  ></iframe>
 			</div>
-			<h2 class="subheading">Appraisal of Strengths & Weaknesses of Old and New Web Standards</h2>
-			<p class="normaltext">
-				Through the process of creating my website I used various features of Hypertext Markup Language (HTML) 5, a type of code that allows users to form the structure to their website. HTML 5 enabled me to easily navigate through my code to find specific areas I wanted to change, allowing me to fix errors or add new lines of code without having to look through every line. On the contrast, HTML 4 the previous version of code, did not have this semantic markup, instead have multiple ‘div’ elements, meaning when you have lots of code it takes longer to find what you’re specifically looking for as well as being unclear what each thing is or does. To emphasise this point over 40 different elements and attributes were added in HTML 5 from HTML 4, making it overall much clearer for people to read others lines of code and understand what they do. Furthermore, HTML 5 encompasses may features that required plugins in HTML 4, once more making web design clearer, especially those new to HTML because you no longer have research and use complex plugins. For instance Matthew B. Hoy wrote in his book on HTML 5 that this is “the most talked about new feature”. Replacing plugins like Flash in HTML 4, to be able to view videos or animations. But since the release of HTML 5 most browsers have stopped using plugins like these, following the growth in iphone and phone users that couldn’t handle these plugins. This means that when users visit websites they no longer will be met with errors if they don’t have the correct plugin or version. With HTML 5 it all comes freely when using modern browsers and websites not limiting any user interaction as well as allowing greater manipulation of the code that controls the videos or animations. Additionally, Simon Pieters, writing on behalf of W3C web standards also notes the ‘confusion’ that HTML 4 had with its layout. For example, Pieters writes that “the p element is itself a "block-level" element, but has a content model (layout) of "inline" [in HTML 4]”. This means that understanding how elements interact with each other was very unclear, made even worse when CSS also uses the same terms of ‘block-level’ and ‘inline’ in its own layout separate from HTML. However, with HTML 5 such ‘confusion’ is reduced by the removal of such terms from the layout rules. Though it should be noted that HTML 5 retained the HTML 4 feature to allow elements to be ‘part of none of them, one of them, or several of them’, demonstrating that HTML 4 was not completely redundant, instead it was fundamental in providing the base concepts and techniques to what we can do now with HTML 5. Other new features HTML 5 added that were useful in my website were, the API’s for even simple things like ‘alert()’ as an alternative to always having to go into the console to see ‘console.log’ if something has fired or not, resulting in error checks being made easier. Finally, though it may be shown that HTML 5 is without flaw, there is the inherent weakness of it being a new website development tool. Whilst HTML 4 has been in use for 10 years prior to HTML 5 release, as Hoy concluded “it may be several years before these features are universally supported”. In addition, more programmers understand HTML 4 which they’ve been using, but now must learn new keywords to be able to make modern sites which all takes time. This is made worse by HTML 5’s tendency to be modified and continually updated so developers keep having to update their websites.
-				<div class="paragraph">
-					In conclusion, HTML 5 has surpassed its predecessor HTML 4 through a combination of useful parts from HTML 4 as well as adding in multiple new features to overall boost the amount of options available to the developer, as I myself have seen and benefitted from, then passing such new abilities onto the users, creating websites that have never before been possible to create.
-				</div>
-			</p>		
-			<h2 class="subheading">On My Website – Development and Techniques Used</h2>
-			<p class="normaltext">
-				As part of my websites validation check using W3C I found that the most common error was the incorrect practice of putting “</img>” to close image tags being unaware that they are different from other tags which do need closing in that style, upon replacing the errors with the correct style I had removed ~30 of the errors. Following on, another ~40 errors were quickly removed once I realised to add “alt” tag to said images. This highlighted to me the importance of having “alt” tags as, though not crucial for the site to run sometimes, they are useful for keeping code clear and well ordered, thus part of the good practice I developed through the process. Continuing, the next error showed how some seemingly modern sites might still be using an older obsolete language, such as YouTube using “frameborder=0” in its embed videos when there’s a CSS equivalent now. Once I had uploaded my site to GitHub I was able to confirm that there were no validation errors left in my HTML. 
-				<div class="paragraph">
-					The CSS through the W3C validator had only a few errors about formatting on ‘hover’, keeping background colours (in case images don’t load) simple and importantly to add semicolons into code. Though using the jeasyui did prompt many additional errors these were not things related to the code as well as other warnings being a result of the validator not recognising ‘-webkits-‘ rather than the code being incorrect. Taking this into account I could fix those issues leaving only the jeasyui ones that are unable to change. Using these validators ensures that our code is running and reminds us to use good web practices when coding to avoid issues.
-				</div>
-			</p>
+			<div id="liloTR" class="videoholder">
+				<iframe style="background: none repeat scroll 0 0 blue; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/wAtaSKQ4-T0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"  ></iframe>  <!-- i took out allowscriptaccess="always" -->
+			</div>
+			<div id="treasureTR" class="videoholder">
+				<iframe style="background: none repeat scroll 0 0 blue; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/NWLv9XCM3fs?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"  ></iframe>
+			</div>
+			<div class="parent">
+				<img alt="WallE" class="images" id="walleIMG" src="Assets/walle.gif"/>
+				<img alt="Lilo" class="images" id="liloIMG" src="Assets/lilo.gif"/>
+				<img alt="TreasurePlanet" class="images" id="treasureIMG" src="Assets/treasureplanet.gif"/>
+			</div>	
+			<div class="box" id="boxtop"></div>
+			<img alt="TinkerbellBG" class="tinkerbellHOMEblack" id="tinkerbellHOMEtop" src="Assets/tinkerbell.png"/>
+			<img alt="TinkerbellColour" class="tinkerbellHOME" src="Assets/tinkerbell3.png"/>
+			<p id="texttop">HOME</p>
+		
+		</section>
 
 
+		<div id="holder" class="holder"> <!-- large div that helps set the unique layout to the site -->
+			<section id="section4"> <!-- this is the left page -->
+				<h4 class="helpmessageleft">Try clicking one of those images...</h4>
+				<div class="boxjungle" id="boxleft"></div>
+				<img alt="TinkerbellBG" id="tinkerbellHOMEjungle" src="Assets/tinkerbell.png"/>
+				<img alt="TinkerbellColour" class="tinkerbellHOME" src="Assets/tinkerbell3.png"/>
+				<p id="textleft">HOME</p>
 
-			<h2 class="subheading">Best Practice Techniques</h2>
-			<p class="normaltext">
-				It is important to keep files organised to be able to effectively navigate through the website when developing, for both finding and adding additional items. For instance, I kept my html files outside the other files and labelled them appropriately to know what each are and to function on GitHub. In the same way, labelling folders ‘Assets, CSS and JS’ meant images and addons as well as stylesheets and JS code were all easy to access for me and anyone looking at my work.
-				<div class="paragraph">
-					Secondly, markup structuring was achieved by maintain smooth and clear flow of tags connecting from parent to child elements throughout the development process. We make sure to have good structure since if there were to be an issue we can ascertain sooner what be causing it through seeing the association between tags, as opposed to a clump of text with no structure being unclear what ‘div’ or element is located where and affects what. See pictures section at the end for illustration.
-				</div>
-				<div class="paragraph">
-					Thirdly, though as outlined in the introduction HTML 5 is used far more widely on browsers, there is still a need for certain prefixes for some lines of code to be able to develop my sites interoperability, with the main one being ‘webkit’ for Safari to understand new techniques in CSS. Whilst successfully completing browser testing, see video guide on website for more, I was able to learn that different browsers while functioning display customised texts in different ways, reminding us of the other aspects that browsers still differ in beyond standard HTML.
-				</div>
-			</p>
+				<div id="arrow-right"></div>
 
-			<h2 class="subheading">My Website Features</h2>
-			<p class="normaltext">
-				One such key feature of my website I developed first was the unique method of navigating the site via hidden “mouseenter” events in JS moving the screen to an off-screen page. It was later when I developed this further with the “transform: translate” that things were harder. It wasn’t until I researched and found that I was miss-using “getElementById” that I otherwise manipulated the screen width successfully. Leading on I developed what became a large part of my JS, editing the iframe videos to stop, reset and play all through just clicking images. By doing so I also expanded my knowledge of jquery which allowed for greater manipulation of these videos. However, with this knowledge came my attempt to incorporate draggable themes into my sites customiser, but along with trying to take them outside of the list they started in, it proved too inefficient for my time and thereby I created my new idea to have the images clicked to show an image in a previously hidden space on the page. Incorporating local storage initially seemed like it was going to be challenging, until I thought of ways to easily store and then retrieve information I need from text. For instance, storing whether the images are “visible” in a variable which if true stores it in local storage, then retrieving it from storage by another ‘if its true’ do something, show image onload. Something different I found challenging was in CSS positioning the images, which weren’t helped by how my website was setup, with some ‘absolute top’ positions having to be 230% to appear on the right page. I was able to overcome this through logical try-and-error till the images appeared on the correct screen. On the contrary, I found some strong success with ‘keyframes’ animations which enabled me to create simple yet effective effects for my limited amount of text. Finally, early in my work I found the need to force my website to load not at the default top of the site, rather half way down the site, which is when I then learnt the “onbeforeunload” allowing me to create such a function to move the site to the real starting page.
-				<div class="paragraph">
-					In the future, the website could be developed further through incorporating other methods to replace “sticky” in older browsers that don’t yet have this feature, such as using ‘fixed’ for example to provide a more consistent viewing experience. Also looking into the different font rendering engines to allow me to set a standard text layout to provide the same site consistency. There is the option to add both music and a diverse range of films if the site were to be developed further, along with adding more responsive design for device beyond mobile and computers.
+				<div id="tarzanTR" class="videoholder2">
+					<iframe style="background: none repeat scroll 0 0 green; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/cB3NW3O_OfE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
 				</div>
-			</p>
+				<div id="lionkingTR" class="videoholder2">
+					<iframe style="background: none repeat scroll 0 0 green; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/jOIu472cCq0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer&amp;iv_load_policy=3"></iframe>
+				</div>
+				<div id="zootopiaTR" class="videoholder2">
+					<iframe style="background: none repeat scroll 0 0 green; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/jWM0ct-OLsM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+				</div>
+							
 
-			<h2 class="subheading">Reference List</h2>
-			<p class="normaltext">
-				<ul>
-					<li class="link"><a href="http://www.techradar.com/news/internet/web/html5-what-is-it-1047393">http://www.techradar.com/news/internet/web/html5-what-is-it-1047393</a></li>
-					<li class="link"><a href="https://www.w3.org/TR/2014/NOTE-html5-diff-20141209/">https://www.w3.org/TR/2014/NOTE-html5-diff-20141209/</a>by Simon Pieters</li>
-					<li class="link"><a href="https://www.go4expert.com/articles/html4-vs-html5-comparison-t30141/">https://www.go4expert.com/articles/html4-vs-html5-comparison-t30141/</a></li>
-					<li class="link"><a href="https://validator.w3.org/">https://validator.w3.org/</a></li>
-					<li class="link"><a href="https://validator.w3.org/nu/">https://validator.w3.org/nu/</a></li>
-					<li class="link"><a href="http://www.tandfonline.com/doi/full/10.1080/02763869.2011.540212?src=recsys&#_i3">http://www.tandfonline.com/doi/full/10.1080/02763869.2011.540212?src=recsys&#_i3</a>by Matthew B. Hoy</li>
-				</ul>
-			</p>
+				<div class="parent"> <!-- contains images seen on site to be clicked -->
+					<img alt="Tarzan" class="images" id="tarzanIMG" src="Assets/tarzan.gif"/>
+					<img alt="LionKing" class="images" id="lionkingIMG" src="Assets/lionking.gif"/>
+					<img alt="Zootopia" class="images" id="zootopiaIMG" src="Assets/zootopia.gif"/>
+				</div>
+			</section>
+
+
+			<section id="section2"> <!-- this is the centre page -->
+
+				<h5 class="helpmessage">Try moving your mouse to the top...</h5>
+				<h6 class="helpmessage2">Or try the bottom...</h6>
+				<h1 class="helpmessage3">Or even the sides...</h1>
+				<h1 class="helpmessage3" id="helpmessageside">Or even the sides...</h1>
+
+				<div id="arrow-left"></div>
+
+				<div id="container"> 
+					<img alt="Represents my video guide" id="youtubeGuide" src="Assets/film.png"/>
+					<a href="https://youtu.be/fcSryd0_IUo">Video Guide</a>
+				</div>
+
+				<div id="container2">
+					<img alt="Represents my report online" id="report" src="Assets/writing.png"/>
+					<a href="myreport999.html">Report</a>
+				</div>
+
+				<h2 class="animated animatedFadeInUp fadeInUp animate" id="Welcome" style="top: 26%; ">WELCOME TO</h2> <!-- these multiple classes form a transition effect for the text to enter the screen by -->
+				<h3 class="animated animatedFadeInUp fadeInUp animate" id="Vault" style="top: 27%; ">DISNEY VAULT..</h3>
+				<div id="godown1"></div><div id="goup1"></div><div id="goleft"></div><div id="goright"></div> <!-- these list how the site is navigated on the home page -->
+			</section>
+
+
+			<section id="section5"> <!-- this is the right page -->
+				<h2>CREATE YOUR OWN FILM PAGE</h2>
+				<div class="box" id="boxright"></div> <!-- these boxes control what happens when Tinkerbell image is hovered over and clicked -->
+				<img alt="TinkerbellBG" class="tinkerbellHOMEblack" src="Assets/tinkerbell.png"/> <!-- determines the size and position of the tinkerbell images -->
+				<img alt="TinkerbellColour" class="tinkerbellHOME" src="Assets/tinkerbell3.png"/>
+				<p id="textright">HOME</p>
+
+				<div id="walleTR3" class="videoholder3">
+					<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/alIq_wG9FNk?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+				</div>
+				<div id="treasureTR3" class="videoholder3">
+					<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/NWLv9XCM3fs?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+				</div>
+				<div id="liloTR3" class="videoholder3">
+					<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/wAtaSKQ4-T0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+				</div>
+				<div id="tarzanTR3" class="videoholder3">
+					<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/cB3NW3O_OfE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+				</div>
+				<div id="lionkingTR3" class="videoholder3">
+					<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/jOIu472cCq0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer&amp;iv_load_policy=3"  ></iframe>
+				</div>
+				<div id="zootopiaTR3" class="videoholder3">
+					<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/jWM0ct-OLsM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+				</div>
+				<div id="moanaTR3" class="videoholder3">
+					<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/C6PbWhWGUrY?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+				</div>
+				<div id="mulanTR3" class="videoholder3">
+					<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/MsAniqGowKE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+				</div>
+				<div id="cinderellaTR3" class="videoholder3">
+					<iframe style="background: none repeat scroll 0 0 orange; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/cL-RjWKtZrM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+				</div>
+				<div class="parent">
+					<img alt="WallE" class="imagelist" id="walleIMG3" src="Assets/walle.gif"/>
+					<img alt="Lilo" class="imagelist" id="liloIMG3" src="Assets/lilo.gif"/>
+					<img alt="TreasurePlanet" class="imagelist" id="treasureIMG3" src="Assets/treasureplanet.gif"/>
+					<img alt="Tarzan" class="imagelist" id="tarzanIMG3" src="Assets/tarzan.gif"/>
+					<img alt="LionKing" class="imagelist" id="lionkingIMG3" src="Assets/lionking.gif"/>
+					<img alt="Zootopia" class="imagelist" id="zootopiaIMG3" src="Assets/zootopia.gif"/>
+					<img alt="Mulan" class="imagelist" id="mulanIMG3" src="Assets/mulan.gif"/>
+					<img alt="Moana" class="imagelist" id="moanaIMG3" src="Assets/moana.gif"/>
+					<img alt="Cinderella" class="imagelist" id="cinderellaIMG3" src="Assets/cinderella.gif"/>
+				</div>
+
+				<div class="btn-group2">
+    				<button id="button2" onclick="clearIMG()">Clear</button> <!-- button to clear all images shown on customised page -->
+    			</div>
+
+    		
+    		
+				<div class="btn-group">
+					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for films.."> <!-- search bar to search for specific films -->
+
+    				<button id="button" onclick="showlist()">Disney Film List</button> <!-- button to show list of disney films -->
+    		
+					<ul class="dropdown-menu" id="toggle">
+						<li class="li-tag drag" id="gap" >FANTASY FILMS
+							<a class="a-tag"><img alt="WalleE" class="imagelist3" id="walleIMG4" src="Assets/walle.gif">fantasy</a> <!-- DONT INCLUDE href="#" as this make the images move page-->
+						</li>
+						<li class="li-tag drag">	
+							<a class="a-tag"><img alt="Lilo" class="imagelist3" id="liloIMG4" src="Assets/lilo.gif">fantasy</a> <!-- list element that shows a picture to be clicked to display a set picture on customier -->
+						</li>
+						<li class="li-tag drag" >
+							<a class="a-tag"><img alt="TreasurePlanet" class="imagelist3" id="treasureIMG4" src="Assets/treasureplanet.gif">fantasy</a>
+						</li>
+						<li class="li-tag drag">JUNGLE FILMS
+							<a class="a-tag"><img alt="Tarzan" class="imagelist3" id="tarzanIMG4" src="Assets/tarzan.gif">jungle</a> <
+						</li>
+						<li class="li-tag drag">	
+							<a class="a-tag"><img alt="LionKing" class="imagelist3" id="lionkingIMG4" src="Assets/lionking.gif">jungle</a>
+						</li>
+						<li class="li-tag drag">	
+							<a class="a-tag"><img alt="Zootopia" class="imagelist3" id="zootopiaIMG4" src="Assets/zootopia.gif">jungle</a>
+						</li>
+						<li class="li-tag drag">PRINCESS FILMS	
+							<a class="a-tag"><img alt="Zootopia" class="imagelist3" id="moanaIMG4" src="Assets/moana.gif">moana</a> 
+						</li>
+						<li class="li-tag drag">	
+							<a class="a-tag"><img alt="Mulan" class="imagelist3" id="mulanIMG4" src="Assets/mulan.gif">mulan</a>
+						</li>
+						<li class="li-tag drag">	
+							<a class="a-tag"><img alt="Cinderella" class="imagelist3" id="cinderellaIMG4" src="Assets/cinderella.gif">cinderella</a>
+						</li>
+					</ul>
+				</div> 
+			</section>
 		</div>
-	</div>
-</body>
+
+
+
+		<section id="section3"> <!-- this is bottom page -->
+			<h4 class="helpmessagebot">Try clicking one of those images...</h4>
+			<div class="box" id="boxbot"></div>
+			<img alt="TinkerbellBG" class="tinkerbellHOMEblack" src="Assets/tinkerbell.png"/>
+			<img alt="TinkerbellColour" class="tinkerbellHOME" src="Assets/tinkerbell3.png"/>
+			<p id="textbot">HOME</p>
+
+			<div id="moanaTR" class="videoholder4">
+				<iframe style="background: none repeat scroll 0 0 pink; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/C6PbWhWGUrY?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+			</div>
+			<div id="cinderellaTR" class="videoholder4">
+				<iframe style="background: none repeat scroll 0 0 pink; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" src="https://www.youtube.com/embed/cL-RjWKtZrM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+			</div>
+			<div id="mulanTR" class="videoholder4">
+				<iframe style="background: none repeat scroll 0 0 pink; box-shadow: 0 1px 4px #949494 inset, 0 0 40px #dfdfdf inset; margin: 0 10px; padding: 0.7em;" width="560" height="315" src="https://www.youtube.com/embed/MsAniqGowKE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer"></iframe>
+			</div>
+			<div class="parent">
+				<img alt="Moana" class="images" id="moanaIMG" src="Assets/moana.gif"/>
+				<img alt="Mulan" class="images" id="mulanIMG" src="Assets/mulan.gif"/>
+				<img alt="Cinderella" class="images" id="cinderellaIMG" src="Assets/cinderella.gif"/>
+			</div>
+		</section>
+	</body>
 </html>
+
+
+
+

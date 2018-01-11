@@ -972,6 +972,11 @@ ul{
 	position: -webkit-sticky; /*SAFARI*/
 }
 
+#whitespace{
+	position: absolute;
+	
+}
+
 /*              */
 
 
