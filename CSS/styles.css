@@ -951,6 +951,13 @@ ul{
 	font-size: 20px;
 	padding-left: 15px;
 	text-decoration: underline;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 20px;
+	background-color: white;
+	width: 28vw;
+	padding-top: 20px;
+	padding-bottom: 22px;
 }
 .normaltext{
 	font-size: 14px;
@@ -961,6 +968,7 @@ ul{
 .title{
 	text-align: center;
 	font-size: 45px;
+	padding-top: 10px;
 
 	
 }
@@ -968,13 +976,17 @@ ul{
 	top: 20px;
 	background-color: white;
 	width: 100vw;
+	padding-top: 1px;
 	position: sticky;
 	position: -webkit-sticky; /*SAFARI*/
 }
 
 #whitespace{
-	position: absolute;
-	
+	position: sticky;
+    width: 100vw;
+    top: 0;
+    height: 20px;
+    background-color: white;
 }
 
 /*              */
