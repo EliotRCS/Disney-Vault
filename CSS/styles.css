@@ -38,6 +38,7 @@ body {
 	font-size: 12px;
 	font-family: "Times New Roman", Times, serif;
 	overflow: hidden;
+	padding-bottom: 1px;
 }
 
 #ReportBG{
