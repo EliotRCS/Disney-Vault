@@ -41,75 +41,66 @@ $('.boxjungle').on('click', function(){
 })
 
 
-//$(".animate").animate({top: '450px'}, 'slow');  //animate the opening title to 'fly in'
-
-
 $(document).ready(function(){
     var showCin = localStorage.getItem('imageshownCin');
     if(showCin === 'true'){
         $('#cinderellaIMG3').show();
-        //localStorage.removeItem('imageshownCin');
     }
 
     var showMul = localStorage.getItem('imageshownMul');
     if(showMul === 'true'){
         $('#mulanIMG3').show();
-        //localStorage.removeItem('imageshownMul');
     }
 
     var showMoa = localStorage.getItem('imageshownMoa');
     if(showMoa === 'true'){
         $('#moanaIMG3').show();
-        //localStorage.removeItem('imageshownMoa');
     }
 
     var showZoo = localStorage.getItem('imageshownZoo');
     if(showZoo === 'true'){
         $('#zootopiaIMG3').show();
-        //localStorage.removeItem('imageshownZoo');
     }
 
     var showLio = localStorage.getItem('imageshownLio');
     if(showLio === 'true'){
         $('#lionkingIMG3').show();
-        //localStorage.removeItem('imageshownLio');
     }
 
     var showTar = localStorage.getItem('imageshownTar');
     if(showTar === 'true'){
         $('#tarzanIMG3').show();
-        //localStorage.removeItem('imageshownTar');
     }
 
     var showTre = localStorage.getItem('imageshownTre');
     if(showTre === 'true'){
         $('#treasureIMG3').show();
-        //localStorage.removeItem('imageshownTre');
     }
 
     var showLil = localStorage.getItem('imageshownLil');
     if(showLil === 'true'){
         $('#liloIMG3').show();
-        //localStorage.removeItem('imageshownLil');
     }
 
     var showWal = localStorage.getItem('imageshownWal');
     if(showWal === 'true'){
         $('#walleIMG3').show();
-        //localStorage.removeItem('imageshownWal');
     }
 });
 
 
 
-$('.images').on('click', function(){  //STRUCTURE FOR PLAYING HIDDEN VIDEOS     //NEED TO FIND A WAY TO ONLY PLAY ONE TRAILER ACCORDING TO WHAT IMAGE IS CLICKED
+$('.images').on('click', function(){  //STRUCTURE FOR PLAYING HIDDEN VIDEOS     
 
-var id = $(this).attr('id');
+var id = $(this).attr('id'); //store what exactly is clicked using 'this' into a variable
 console.log(id);
 
-if(this.id==='walleIMG'){
+if(this.id==='walleIMG'){  //if the id of what was clicked is equal to this IMG then hide the other videos then play and show this ones specific video
 	$('.videoholder').hide();
-	$('#walleTR iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('.videoholder2').hide();
+  $('.videoholder3').hide();
+  $('.videoholder4').hide();
+	$('#walleTR iframe').each(function(){   
   			this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   		})
 	$('#walleTR').show();
@@ -117,8 +108,11 @@ if(this.id==='walleIMG'){
 }
 
 if(this.id==='liloIMG'){
-	$('.videoholder').hide();
-	$('#liloTR iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('.videoholder').hide();
+  $('.videoholder2').hide();
+  $('.videoholder3').hide();
+  $('.videoholder4').hide();
+	$('#liloTR iframe').each(function(){   
   			this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   		})
 	$('#liloTR').show();
@@ -130,7 +124,7 @@ if(this.id==='treasureIMG'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-	$('#treasureTR iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+	$('#treasureTR iframe').each(function(){   
   			this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   		})
 	$('#treasureTR').show();
@@ -141,7 +135,7 @@ if(this.id==='tarzanIMG'){
 	$('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-	$('#tarzanTR iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+	$('#tarzanTR iframe').each(function(){   
   			this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   		})
 	$('#tarzanTR').show();
@@ -152,7 +146,7 @@ if(this.id==='lionkingIMG'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-  $('#lionkingTR iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('#lionkingTR iframe').each(function(){   
         this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
       })
   $('#lionkingTR').show();
@@ -163,7 +157,7 @@ if(this.id==='zootopiaIMG'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-  $('#zootopiaTR iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('#zootopiaTR iframe').each(function(){   
         this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
       })
   $('#zootopiaTR').show();
@@ -174,7 +168,7 @@ if(this.id==='moanaIMG'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-  $('#moanaTR iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('#moanaTR iframe').each(function(){   
         this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
       })
   $('#moanaTR').show();
@@ -186,7 +180,7 @@ if(this.id==='mulanIMG'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-  $('#mulanTR iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('#mulanTR iframe').each(function(){   
         this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
       })
   $('#mulanTR').show();
@@ -198,7 +192,7 @@ if(this.id==='cinderellaIMG'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-  $('#cinderellaTR iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('#cinderellaTR iframe').each(function(){   
         this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
       })
   $('#cinderellaTR').show();
@@ -233,14 +227,7 @@ if(this.id==='cinderellaIMG'){
   	stop=false;
 	}
     
-    else{
-		//$('video iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
-  			//this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-  			
-  			
-  		//})
-
-    	
+    else{  //this will intially fire the first time an image is clicked, setting up so that the next IMG click will STOP, RESET and HIDE the video
 
     	stop=true;
     }
@@ -248,7 +235,7 @@ if(this.id==='cinderellaIMG'){
 })
 
 
-$('.imagelist').on('click', function(){  //STRUCTURE FOR PLAYING HIDDEN VIDEOS     //NEED TO FIND A WAY TO ONLY PLAY ONE TRAILER ACCORDING TO WHAT IMAGE IS CLICKED
+$('.imagelist').on('click', function(){  //STRUCTURE FOR PLAYING HIDDEN VIDEOS     
 
 var id = $(this).attr('id');
 console.log(id);
@@ -259,7 +246,7 @@ if(this.id==='walleIMG3'){
   $('.videoholder3').hide();
   $('.videoholder4').hide();
 	console.log("WALLE CLICKED")
-	$('#walleTR3 iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+	$('#walleTR3 iframe').each(function(){   
   			this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   		})
 	$('#walleTR3').show();
@@ -271,7 +258,7 @@ if(this.id==='liloIMG3'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-	$('#liloTR3 iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+	$('#liloTR3 iframe').each(function(){   
   			this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   		})
 	$('#liloTR3').show();
@@ -283,7 +270,7 @@ if(this.id==='treasureIMG3'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-	$('#treasureTR3 iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+	$('#treasureTR3 iframe').each(function(){   
   			this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   		})
 	$('#treasureTR3').show();
@@ -294,7 +281,7 @@ if(this.id==='tarzanIMG3'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-	$('#tarzanTR3 iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+	$('#tarzanTR3 iframe').each(function(){   
   			this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   		})
 	$('#tarzanTR3').show();
@@ -305,7 +292,7 @@ if(this.id==='lionkingIMG3'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-  $('#lionkingTR3 iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('#lionkingTR3 iframe').each(function(){   
         this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
       })
   $('#lionkingTR3').show();
@@ -316,7 +303,7 @@ if(this.id==='zootopiaIMG3'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-  $('#zootopiaTR3 iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('#zootopiaTR3 iframe').each(function(){   
         this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
       })
   $('#zootopiaTR3').show();
@@ -327,7 +314,7 @@ if(this.id==='moanaIMG3'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-  $('#moanaTR3 iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('#moanaTR3 iframe').each(function(){   
         this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
       })
   $('#moanaTR3').show();
@@ -338,7 +325,7 @@ if(this.id==='mulanIMG3'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-  $('#mulanTR3 iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('#mulanTR3 iframe').each(function(){   
         this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
       })
   $('#mulanTR3').show();
@@ -349,7 +336,7 @@ if(this.id==='cinderellaIMG3'){
   $('.videoholder2').hide();
   $('.videoholder3').hide();
   $('.videoholder4').hide();
-  $('#cinderellaTR3 iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
+  $('#cinderellaTR3 iframe').each(function(){   
         this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
       })
   $('#cinderellaTR3').show();
@@ -384,25 +371,18 @@ if(this.id==='cinderellaIMG3'){
 	}
     
     else{
-		//$('video iframe').each(function(){  //this currently plays all trailers at the same time. Need to say only play 1 trailer. IS THERE A WAY TO STORE ALL THE TRAILERS IN ONE VARIABLE TO CALL HERE? EG/video = liloTRs
-  			//this.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-  			
-  			
-  		//})
-
-    	
 
     	stop=true;
     }
 
 })
 
-//SHOWS 
+
 $('.imagelist3').on('click', function(){
   var id = $(this).attr('id');
   console.log(id);
 
-  if(hide==true){
+  if(hide==true){ //this is fired once an IMG has first been clicked, on the second click the specific IMG will be hidden and removed from local storage
     if(this.id==='walleIMG4'){
       $('#walleIMG3').hide();
       var Walquery = $('#walleIMG3');
@@ -493,7 +473,7 @@ $('.imagelist3').on('click', function(){
     hide=false;
   }
 
-  else{
+  else{ //once again this fires first with the first IMG being showed on the customiser page as well as stored in local storage
     if(this.id==='walleIMG4'){
       console.log('show');
       $('#walleIMG3').show();
@@ -596,16 +576,12 @@ document.getElementById("boxleft").addEventListener("mouseenter", showtextleft);
 document.getElementById("boxleft").addEventListener("mouseleave", showtextleft);
 
 
-
-//document.getElementById("godown").addEventListener("mouseenter", scrolldown);  
+  
 document.getElementById("godown1").addEventListener("mouseenter", scrolldown1);
 
 
 
 document.getElementById("goup1").addEventListener("mouseenter", scrollup1);   
-//document.getElementById("goup2").addEventListener("mouseenter", scrollup2); 
-//document.getElementById("goup3").addEventListener("mouseenter", scrollup3);    //DONT NEED THIS
-//document.getElementById("goup4").addEventListener("mouseenter", scrollup4);   //DONT NEED THIS
 
 
 document.getElementById("arrow-left").onclick = function() {scrollLeft()};
@@ -615,16 +591,13 @@ document.getElementById("goright").addEventListener("mouseenter", scrollRight);
 
 document.getElementById("arrow-right").onclick = function() {scrollRight2()};
 
-//document.getElementById("goright2").addEventListener("mouseenter", scrollRight2);
+
+
+//document.getElementById("toggle");  //WHAT DOES THIS EVEN DO
 
 
 
-
-document.getElementById("toggle");  //WHAT DOES THIS EVEN DO
-
-
-
-
+//THIS WAS MY WORK ON DRAGGABLE BEFORE I CHANGED TO MY CURRENT CUSTOMISER IDEA
 //var left;
 //var top;
 
@@ -692,13 +665,13 @@ document.getElementById("toggle");  //WHAT DOES THIS EVEN DO
 
 //});   
 
+/////////////////////////////////////////////////////////////////
 
 
 
+}  //END OF ON LOAD 
 
-}  //END OF ON LOAD (I THINK)
-
-function clearIMG(){
+function clearIMG(){ //this button when clicked hides, stops, resets videos and removes all images from local storage
   $('.imagelist').hide();
   localStorage.clear();
 
@@ -730,7 +703,7 @@ function clearIMG(){
 }
 
 function showlist(){
-	$("#toggle").toggle();
+	$("#toggle").toggle(); //toggle relates to changing the CSS display from none to block and vica versa when fired
 }
 
 function showtexttop(){
@@ -751,22 +724,18 @@ function showtextleft(){
 }
 
 
-//document.getElementById("goright").style.transform = "translate(0vw)";
 
-intervalID = window.setInterval(helpmessage, 6000); //every 5secs show the help message
+
+intervalID = window.setInterval(helpmessage, 6000); //every 6secs show the help message, the timer sets the speed the text appears and how long for in a cycle
 intervalID2 = window.setInterval(helpmessage2, 6200);
 intervalID3 = window.setInterval(helpmessage3, 6800);
 
 function helpmessage(){
 	$(".helpmessage").toggle(1000);
-  $(".helpmessagebot").toggle(1000);
+  $(".helpmessagebot").toggle(1000); //how long text is visible for before disappearing then returning
   $(".helpmessageleft").toggle(1000);
 	
 }
-//function helpmessage(){
-  
-  
-//}
 
 function helpmessage2(){
 	$(".helpmessage2").toggle(1000);
@@ -779,21 +748,19 @@ function helpmessage3(){
 }
 
 
-function scrollLeft(){
-	//window.scrollTo(0,h);   
-	console.log("transform none");
+function scrollLeft(){ 
+	console.log("transform none");  //this is the key to getting to my left page by shifting everything right effectively
 	document.getElementById("holder").style.transform = "none";  //remember that your doing get element by ID!!! so dont try calling a class silly
 }
 
 
 function scrollRight(){
-	window.scrollTo(w,h);    
+	window.scrollTo(w,h); //these are just various ways my site is navigated
 	
 }
 
 function scrollRight2(){
-	//window.scrollTo(w,h);
-	document.getElementById("holder").style.transform = "translateX(-100vw)";    
+	document.getElementById("holder").style.transform = "translateX(-100vw)";
 	
 }
 
@@ -805,15 +772,10 @@ function scrolldown(){
 
 }
 
-//if(timer=true){                           //HOW DO I SET TIMER TO "TRUE", WHEN THE MOUSE HAS ENTERED THE PINK BOX (DIV)
-	//var delayinMilliseconds = 1000;
-//setTimeout(
 	function scrolldown1(){
 	window.scrollTo(0,(h*2));
 
-}//, delayinMilliseconds);
-//}
-
+}
 
 
 
@@ -826,48 +788,28 @@ function scrollup1(){
 
 
 function scrollup2(){
-	window.scrollTo(0,h); //was 1300
+	window.scrollTo(0,h); 
 
 }
 
-
-//function scrollup3(){
-	//window.scrollTo(0,2700);
-
-//}
-
-//function scrollup4(){
-	//window.scrollTo(0,3300);
-
-//}
-
-
-
-
 	
-
-
-
-
-//item to drop
-
-
+//this function relates to the search bar in my list
 
 function myFunction() {
     // Declare variables
     var input, filter, ul, li, a, i;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("toggle");
+    input = document.getElementById('myInput'); //whatever is typed in the search bar in this Id
+    filter = input.value.toUpperCase(); //convert every character type to an upper case value (ASCII)
+    ul = document.getElementById("toggle");  //the id for the 'ul'
     li = ul.getElementsByTagName('li');
 
     // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+    for (i = 0; i < li.length; i++) {  //for however many 'li' tag items keep searching till there is nothing viable to check from what is typed
+        a = li[i].getElementsByTagName("a")[0]; 
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) { //does whats being typed in value match something in the same order as in the 'a' tag, if the value doesnt then it will show nothing
+            li[i].style.display = ""; //if it does still match what is being typed dont hide it
         } else {
-            li[i].style.display = "none";
+            li[i].style.display = "none"; //if it doesnt match what is typed hide it
         }
     }
 }

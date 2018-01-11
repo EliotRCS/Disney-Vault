@@ -1,14 +1,10 @@
 
 
 body {
-
 	margin: 0;
 	background-color: black;
 	color: white;
-	/* font-family: sans-serif; */
-	/* font: normal normal bold "Bad Script", Helvetica, sans-serif; */
 	font-family: Walt Disney Script;
-	
 	overflow:hidden;
 
 }
@@ -203,14 +199,6 @@ h6.helpmessage2{
 }
 
 
-/*div#godown{
-position:absolute;
-	 bottom: -20px; 
-	 width: 100vw;
-	 height: 10vh;
-	 background-color: violet;
-}*/
-
 div#godown1{
 position:absolute;
 	 bottom: 0px;
@@ -218,70 +206,33 @@ position:absolute;
 	 height: 10vh;
 	 opacity: 0.5;
 }
-	 /*filter: alpha(opacity=50);  /*REMOVE OPACITY EFFECT IF IM NOT PUTTING IN A DELAY WHEN SCROLLING PAGES
-	 background-color: violet;
-}
-div#godown1:hover{
-	opacity: 1.0;
-	filter: alpha(opacity=100);
-}*/
-
-
-
-
-
 
 div#goup1{
 position:absolute;
 	 top: 0%;
 	 width: 100vw;
 	 height: 8.5vh;
-	 /*background-color: yellow;*/
 	 z-index: 998;
 }
-
-/*div#goup2{
-position:absolute;
-	 top: 202.5%;   /* why is this such a strange percentage to fit in fine??  202.5%
-	 width: 100vw;
-	 height: 10vh;
-	 background-color: yellow;
-	 z-index: 998;
-}*/
-
-
 
 
 div#goright{
 position:absolute;
 	 right: 100vw;
 	 width: 7.5vw;
-	 height: 5000px;  /*FIGURE OUT HOW TO "BRING-FORWARD" THE GREEN BOX AS IT IS CURRENTLY BEING RESTRICTED BY THE H2 TAGS  (RIGHT NOW ITS REALLY SMALL IN THE CORNER OF THE MIDDLE PAGE) */
-	 /*background-color: green; */
+	 height: 5000px;  
 	 position:absolute;
 	 right:0;
 	 top:0;
 	 z-index: 999;
 }
 
-/*div#goright2{
-position:absolute;
-	 right: 100vw;
-	 width: 5.5vw;
-	 height: 100vh;  /*FIGURE OUT HOW TO "BRING-FORWARD" THE GREEN BOX AS IT IS CURRENTLY BEING RESTRICTED BY THE H2 TAGS  (RIGHT NOW ITS REALLY SMALL IN THE CORNER OF THE MIDDLE PAGE) 
-	 background-color: green;
-	 position:absolute;
-	 right:0;
-	 bottom:-1350px;
-	 z-index: 999;
-}*/
 
 div#goleft{
 position:absolute;
 	 left: 0px;
 	 width: 6.5vw;
 	 height: 100vh;
-	 /*background-color: blue; */
 	 position:absolute;
 	 left:0;
 	 top:0;
@@ -309,7 +260,6 @@ position:absolute;
 }
 #boxbot:hover{ 
 	cursor: pointer;
-	/*filter: invert(100%); */
 }
 
 #boxright{
@@ -323,7 +273,6 @@ position:absolute;
 }
 #boxright:hover{ 
 	cursor: pointer;
-	/*filter: invert(100%); */
 }
 
 #boxtop{
@@ -337,7 +286,6 @@ position:absolute;
 }
 #boxtop:hover{ 
 	cursor: pointer;
-	/*filter: invert(100%); */
 }
 
 .tinkerbellHOME{
@@ -374,7 +322,6 @@ position:absolute;
 }
 #boxleft:hover{ 
 	cursor: pointer;
-	/*filter: invert(100%); */
 }
 
 #texttop{
@@ -409,29 +356,12 @@ position:absolute;
 	display: none;
 	position: absolute;
 }
-/*
-div#goup3{
-position:absolute;
-	 top: 300%;
-	 width: 100vw;
-	 height: 10vh;
-	 background-color: yellow;
-}
-
-div#goup4{
-position:absolute;
-	 top: 400%;
-	 width: 100vw;
-	 height: 10vh;
-	 background-color: red;
-}
-*/
 
 
 
 
 
-#section1{   /* this section now has a gap between the top of the window and the image. why?? */
+#section1{   
 
 background-color: black;
 background-image: url("../Assets/stars2.jpg");
@@ -447,7 +377,7 @@ padding: 0;
 background-color: lightblue;  /* background-color: linear-gradient(to right, darkred, darkred 15%, green 15%, green 85%, darkred 85%); something i played about with*/
 background-image: url("../Assets/castle2.jpg");
 background-repeat: no-repeat;
-background-size: cover; /* cover seems to be better than 100vw when you change the window page size around */
+background-size: cover;
 background-position: center center;
 margin:auto;
 padding: 0;
@@ -791,14 +721,7 @@ iframe{
 }
 
 
-/*#section4 h2{
-	top: 34%; 
-	font-size: 230%;
-}*/
-/*#section4 h3{
-	top: 35%; 
-	font-size: 700%;
-}*/
+
 #Welcome{
 	font-size: 230%;
 }
@@ -880,7 +803,6 @@ button:focus {outline:0;}
 	background-color: transparent;
     border: none;
     color: white;
-    /* font-weight: bold; */
     padding: 8px 22px;
     text-align: center;
     text-decoration: none;
@@ -888,14 +810,12 @@ button:focus {outline:0;}
     display: inline-block;
     font-size: 24px;
     font-family: Curly Font;
-    /*box-shadow: 2px 2px 2px black; */
 }
 #button2{
 	border-radius: 25px;
 	background-color: transparent;
     border: none;
     color: white;
-    /* font-weight: bold; */
     padding: 8px 22px;
     text-align: center;
     text-decoration: none;
@@ -903,7 +823,6 @@ button:focus {outline:0;}
     display: inline-block;
     font-size: 24px;
     font-family: Curly Font;
-    /*box-shadow: 2px 2px 2px black; */
 }
 
 
@@ -919,7 +838,7 @@ button:focus {outline:0;}
 
 
 #myInput {
-    background-image: url('../Assets/searchicon.png'); /* THIS IMAGE DOES NOT APPEAR, WHY?? */
+    /*background-image: url('../Assets/searchicon.png'); /* THIS IMAGE DOES NOT APPEAR, WHY?? */
     background-position: 10px 12px; /* Position the search icon */
     background-color: #e38a4c;
     background-repeat: no-repeat; /* Do not repeat the icon image */
@@ -936,11 +855,9 @@ button:focus {outline:0;}
 	z-index: 99;
 }
 
-#arrow{  /* TRY AND MAKE THIS LOOK BETTER BY ANY MEANS */
+#arrow{  
 	top: 30%;
 	left: 10%;
-
-
 	opacity: 0.5;
 	width: 40px;
 	height: 45px;
@@ -951,14 +868,12 @@ button:focus {outline:0;}
   margin-left: 10px;
   position: absolute;
   top: 150px;
-  /* width: 128px; */
 }
 
 .btn-group2{
   margin-left: 10px;
   position: absolute;
   top: 70px;
-  /* width: 128px; */
 }
 
 
@@ -967,8 +882,8 @@ button:focus {outline:0;}
 .dropdown-menu > li > a:hover{
 	cursor: pointer;
   	background: #f1f9fd;
-  	box-shadow: 2px 2px 2px black;   /* this might not work */
-} /* $search-blue */
+  	box-shadow: 2px 2px 2px black;  
+} 
 
 #toggle{
     width: 120px;
@@ -993,7 +908,7 @@ button:focus {outline:0;}
 	width: 80px;
 	height: 80px;
 	overflow: visible;
-	display: block;  /*   THIS MAY NOT WORK */
+	display: block; 
 	transition: all .5s;
 }
 
@@ -1031,7 +946,7 @@ ul{
 /* END LIST DETAILS */
 
 
-@media screen and (max-width: 420px) {  /* SIZE OF EVERYTHING THE SIZE OF AN IPHONE OR SMALLER*/  /*1280 width for computers       375:1280       1:3.413333333  or 0.29296875:1*/
+@media screen and (max-width: 420px) {  /* SIZE OF EVERYTHING THE SIZE OF AN IPHONE OR SMALLER*/ 
 	#Welcome{
 		font-size: 115%;
 	}
@@ -1155,7 +1070,7 @@ ul{
 		position: absolute;
 		width: 80%;
 		padding:2px 1px 2px 1px;
-		margin-top: 25.4px; /*26.3*/
+		margin-top: 25.4px;
 		left: 1%;
 		z-index: 99;
 	}
