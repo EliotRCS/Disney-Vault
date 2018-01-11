@@ -31,9 +31,6 @@ body {
 .paragraph{
 	padding-top: 5px;
 	padding-bottom: 5px;
-	font-family: Georgia, serif;
-	padding-left: 15px;
-	padding-right: 15px;
 }
 
 .link{
@@ -62,8 +59,8 @@ body {
 .normaltext{
 	font-size: 14px;
 	font-family: Georgia, serif;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 30px;
+    padding-right: 30px;
 }
 .title{
 	text-align: center;
